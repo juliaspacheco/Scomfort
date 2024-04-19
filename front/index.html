@@ -1,23 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integração de formulário com API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="imagex/png" href="logoico.ico">
+
+    <title>SCOMFORT</title>
 </head>
+
 <body>
-    <h2>Formulário</h2>
+    <header>
+        <img src="./img/logo.png">
+        <nav>
+            <a id="navLinkHome"> Home </a>
+            <a id="navLinkSobreNos"> <a href="#tituloSobreNos"> Sobre Nós </a> </a>
+            <a id="navLinkPromocoes"> <a href="#tituloPromocao"> Promoções</a> </a>
+            <a id="navLinkContato"> <a href="#cadastrar"> Contato </a> </a>
+        </nav>
+    </header>
 
-    <form action="#">
-        <label for="fname">Título</label><br>
-        <input type="text" id="title" name="title"><br>
+    <main>
+        <section>
+            <div class="texto_carrossel">
+                <a href="#tituloPrincipaisVendas" id="propaganda"> SCOMFORT </a>
+                <a href="#tituloPrincipaisVendas" id="propaganda" > A marca que inova seus looks! </a>
+            </div>
 
-        <label for="lname">Descrição:</label><br>
-        <input type="text" id="description" name="description"><br><br>
+            <img src="./img/Carrosel.png" id="carrossel">
+        </section>
 
-        <button id="handleSubmit">Enviar</button>
-    </form>
+        <div>
+            <h2 id="tituloSobreNos"> SOBRE NÓS </h2>
+        </div>
 
-    <script src="./script.js"></script>
+        <section class="sobreNos">
+            <img src="./img/tenisamarelo.png" id="tenisAmarelo">
+            <section class="textoSobre">
+                <p>
+                    Nossa empresa tem como objetivo transformar a forma como seus tênis são usados, tornando-os
+                    confortáveis e estilosos para o uso fora e dentro do trabalho! Procuramos estilizar os seus tênis
+                    para tornár-los a peça principal do seu look! Transformando um look corporativo em um look criativo
+                    e confortável.
+                    Conheça nossas redes sociais para acompanhar as atualizações!
+                </p>
+                <section>
+                    <a class="linkIcons" href="https://www.instagram.com/instagram/" target="_blank">
+                        <img class="icons" src="./img/instagram (1).png">
+                    </a>
+                    <a class="linkIcons" href="https://www.facebook.com" target="_blank">
+                        <img class="icons" src="./img/facebook (1).png">
+                    </a>
+                    <a class="linkIcons" href="https://www.twitter.com" target="_blank">
+                        <img class="icons" src="./img/twitter (1).png">
+                    </a>
+                </section>
+            </section>
+        </section>
+
+        <section class="mural">
+            <h2 id="tituloPromocao"> PROMOÇÕES </h2>
+
+            <!-- <img id="vans" src="./img/corpointeirovans(mural).png">
+                <img id="air" src="./img/corpointeiroair(mural).png"> -->
+
+            <!-- <div>
+                    <img id="nike" src="./img/nike(mural).png">
+                    <div class>
+                        <img id="knu" src="./img/knu(mural).png">
+                    </div>
+                </div> -->
+            <section class="bloco_tenis">
+                <section class="bloco_vans">
+                    <h2> Vans SK8-HI </h2>
+
+                    <section>
+                        <h2>R$ 249,59</h2>
+                    </section>
+                </section>
+
+                <section class="bloco_air">
+                    <h2> Air Force </h2>
+
+                    <section>
+                        <h2>R$ 249,59</h2>
+                    </section>
+                </section>
+
+                <section class="bloco_court">
+                    <section class="bloco_nike">
+                        <h2> Nike Court Legacy </h2>
+
+                        <section>
+                            <h2>R$ 249,59</h2>
+                        </section>
+                    </section>
+
+                    <section class="bloco_knu">
+                        <h2> Vans Knu Skool </h2>
+
+                        <section>
+                            <h2>R$ 249,59</h2>
+                        </section>
+                    </section>
+                </section>
+                <!-- <section class="bloco_infos_tenis">
+                        <h2> Nike </h2>
+    
+                        <section>
+                            <h2>R$ 249,59</h2>
+                        </section>
+                    </section> -->
+            </section>
+        </section>
+
+        <section class="principaisVendas">
+            <h3 id="tituloPrincipaisVendas"> PRINCIPAIS VENDAS </h3>
+            <section>
+                <div>
+                    <img class="imgsPrincipaisVendas" src="./img/dunk(promocoes).png">
+                    <h4>R$ 259,99</h4>
+                    <p>Nike Dunk Low</p>
+                </div>
+                <div>
+                    <img class="imgsPrincipaisVendas" src="./img/newbalance(promocoes).png">
+                    <h4>R$ 359,99</h4>
+                    <p>New Balance 550</p>
+                </div>
+                <div>
+                    <img class="imgsPrincipaisVendas" src="./img/allstar(promocoes).png">
+                    <h4>R$ 249,59</h4>
+                    <p>Converse All Star</p>
+                </div>
+                <div>
+                    <img class="imgsPrincipaisVendas" src="./img/forumlow(promocoes).png">
+                    <h4>R$ 449,59</h4>
+                    <p>Adidas Forum Low</p>
+                </div>
+            </section>
+        </section>
+
+        <div>
+            <h2 class="contato" id="tituloContato"> CONTATO </h2>
+        </div>
+
+        <section class="fundo">
+
+            <h3 id="cadastrar"> CADASTRE-SE PARA SABER MAIS </h3>
+
+            <div class="fundo-container">
+
+
+                <img id="logofundo" src="./img/logo.png">
+
+
+                <form action="#" class="cadastro">
+                    <input class="dados" type="text" id="nome" placeholder="Nome Completo">
+                    <input class="dados" type="text" id="email" name="email" placeholder="Email">
+                    <input class="dados" type="password" id="senha" name="senha"placeholder="Senha">
+
+                    <button id="handleSubmit"> ENVIAR </button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

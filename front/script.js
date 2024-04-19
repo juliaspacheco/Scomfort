@@ -1,9 +1,11 @@
 let button = document.getElementById("handleSubmit");
 
-button.onclick = async function () {
-    let title = document.getElementById("title").value;
-    let description = document.getElementById("description").value;
-    let data = {title, description}
+button.onclick = async function (event) {
+    event.preventDefault();
+    let nome = document.getElementById("nome").value;
+    let email = document.getElementById("email").value;
+    let senha = document.getElementById("senha").value;
+    let data = {nome, email, senha}
 
     const response = await fetch('http://localhost:3001/api/store/task', {
         method: "POST",
@@ -12,6 +14,8 @@ button.onclick = async function () {
     });
 
     let content = await response.json();
+
+    console.log(content);
 
     if(content.success) {
         alert("Sucesso")

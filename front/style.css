@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #323C6D;
+    --azul-escuro: #151F51;
+    --azul-claro: #3994A5;
+    --amarelo: #FFD057;
+    --amarelo-escuro: #E48900;
+    --laranja: #FF7A00;
+    --azul-fraco: #A2A7C3;
+    --preto:#0000;
+    --letras:#7077a3;
+}
+
+/* HEADER */
+
+header{
+    padding: 1vh;
+    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+    padding-left: 1%;
+}
+
+nav{
+    display: flex;
+    gap: 60px;
+}
+
+a{
+    color: var(--azul-fraco);
+    /* align-items: center; */
+    text-decoration: none;
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+/* #navLinkHome:hover{
+    color: #d3d3d3;
+}
+
+#navLinkSobreNos:hover{
+    color: #d3d3d3;
+}
+
+#navLinkPromocoes:hover{
+    color: #d3d3d3;
+}
+
+#navLinkContato:hover{
+    color: #d3d3d3;
+} */
+
+header img{
+    width: 6%;
+}
+
+/* .navLinkHome {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFBD81;
+    text-decoration: none;
+}
+
+.navLinkSobreNos{
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFBD81;
+    text-decoration: none;
+}
+
+.navLinkPromocoes{
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFBD81;
+    text-decoration: none;
+}
+
+.navLinkContato{
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #6EC4D4;
+    text-decoration: none;
+} */
+
+/* MAIN */
+
+#carrossel{
+    height: 80vh;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.texto_carrossel{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding-left: 8%;
+    padding-top: 15%;
+}
+
+#propaganda{
+    font-size: 40px;
+    color: #7885aa;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    text-shadow: #1f2338  3px 2px;
+}
+
+.texto_carrossel:hover{
+    transition: 0.5s;
+    opacity: 60%;
+}
+
+.sobreNos{
+    display: flex;
+    margin-top: 5%; 
+    background-color: #FFD057;
+    padding: 4%;
+}
+
+#tituloSobreNos{
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color:var(--amarelo-escuro);
+}
+
+#tenisAmarelo {
+    width: 15vw;
+}
+
+.textoSobre{
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    flex-direction: row;
+    margin-left: 3%;
+    justify-content: center;
+}
+
+.icons{
+    width: 2vw;
+    margin-top: 5%;
+}
+
+.linkIcons{
+    text-decoration: none;
+}
+
+/* mural promocao */
+
+/* .mural {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+#tituloPromocao{
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: var(--laranja);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bloco_tenis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    /* padding: 5%; */
+}
+
+.bloco_vans {
+    background-image: url('./img/corpointeirovans(mural).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 63vh;
+    width: 16%;
+    color: rgb(206, 75, 36);
+    font-family: "Jost", sans-serif;
+}
+
+.bloco_air {
+    background-image: url('./img/corpointeiroair(mural).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 63vh;
+    width: 12%;
+    color: rgb(206, 75, 36);
+    font-family: "Jost", sans-serif;
+}
+
+.bloco_court {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.bloco_nike {
+    background-image: url('./img/nike(mural).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    width: 25vw;
+    color: rgb(206, 75, 36);
+    font-family: "Jost", sans-serif;
+}
+
+.bloco_knu {
+    background-image: url('./img/knu(mural).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    width: 25vw;
+    color: rgb(206, 75, 36);
+    font-family: "Jost", sans-serif;
+}
+
+.bloco_vans h2, .bloco_air h2, .bloco_nike h2, .bloco_knu h2 {
+    display: none;
+}
+
+.bloco_vans:hover h2, .bloco_air:hover h2, .bloco_nike:hover h2, .bloco_knu:hover h2{
+    display: block;
+}
+
+/* #vans:hover{
+    transition: 2s;
+    filter: grayscale(100%);
+}
+
+#air:hover{
+    transition: 2s;
+    filter: grayscale(100%);
+}
+
+#nike:hover{
+    transition: 2s;
+    filter: grayscale(100%);
+}
+
+#knu:hover{
+    transition: 2s;
+    filter: grayscale(100%);
+} */
+
+.imgs img {
+    padding: 10px;
+}
+
+/* PRINCIPAIS PROMOÇÕES */
+
+#tituloPrincipaisVendas{
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #AAE9F5;
+    margin-bottom: 3%;
+}
+
+.principaisVendas{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding: 3% 4%;
+    background-color: var(--azul-claro);
+}
+
+.principaisVendas section{
+    display: flex;
+    flex-direction: row;
+    gap: 8vw;
+    justify-content: center;
+}
+
+.imgsPrincipaisVendas{
+    height: 30vh;
+}
+
+.principaisVendas div{
+    flex-direction: column;
+}
+
+.principaisVendas h4{
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #232323;
+}
+
+.principaisVendas p{
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #004653;
+}
+
+/* CONTATO */
+
+.tituloContato{
+    display: flex;
+    justify-content: center;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--azul-escuro);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contato{
+    margin-top: 5%;
+    margin-bottom: 5%; 
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #323C6D;
+}
+
+.fundo{
+    background-color: var(--azul-escuro);
+}
+
+.fundo-container{
+    display:flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 7%;
+}
+
+#cadastrar{
+    display: flex;
+    font-family: "Jost", sans-serif;
+    color: var(--azul-fraco);
+    justify-content: space-around;
+    padding-top: 3%;
+    font-size: 27px;
+}
+
+#logofundo{
+    display: flex;
+    width: 25vw;
+    padding-top: 7%;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    width: 25%;
+    padding-top: 7%;
+}
+
+.button{
+    display: flex;
+}
+
+#handleSubmit {
+    text-align: center;
+    padding: 15px;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    color: #e47900;
+    background-color: #d3d3d3;
+}
+
+.dados{
+    display: flex;
+    padding: 18px;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #d3d3d3;
+}
